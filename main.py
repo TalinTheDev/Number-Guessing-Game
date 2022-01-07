@@ -1,6 +1,14 @@
 from random import randint
 from time import sleep
 from os import system
+import sys
+
+# Function to clear console window
+def clear():
+  if sys.platform != "win32":
+    system("clear")
+  else:
+    system("cls")
 
 def main():
   print("Number Guessing Game by Talin Sharma talinsharma.dev@gmail.com")
@@ -13,7 +21,7 @@ def main():
 
   # Start Game
   sleep(1)
-  system("cls")
+  clear()
   print("I have thought of a number between {} and {}. You have {} guesses to guess the number.\n\nGood Luck!".format(MIN_NUMBER, MAX_NUMBER, NUMBER_OF_GUESSES))  
   sleep(1.5)
 
@@ -35,7 +43,8 @@ def main():
     guess = int(input("Guess {}: ".format(guessCount)))
 
   # Inform player of correct guess.
-  system("cls")
+  clear()
   print("Yay!\nYou guessed correctly! The secret number was {}. It took you {}/{} guesses to figure it out!".format(SECRET_NUMBER, guessCount, NUMBER_OF_GUESSES))
+  sleep(2)
 
 main()
