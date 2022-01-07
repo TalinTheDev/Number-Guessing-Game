@@ -11,3 +11,7 @@ Run `main.py` to play one time.
 ## Contact Me
 
 Email: talinsharma.dev@gmail.com
+
+## Forking
+
+If you fork this and add to it, wonderful! Just please mention me!
