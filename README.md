@@ -4,7 +4,7 @@ A fun number guessing game made in python that changes its self each time!
 
 ## Use
 
-Run `loop.bat` on Windows to play endlessly.
+Run `loop.bat` on Windows or `loop.sh` on Linux, to play endlessly.
 
 Run `main.py` to play one time.
 
